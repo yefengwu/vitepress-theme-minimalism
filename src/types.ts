@@ -40,17 +40,6 @@ export interface IPage {
   outDir?: string;
 }
 
-export interface IAd {
-  title: string;
-  img: string;
-  link?: string;
-}
-
-export interface IAdsense {
-  client: string;
-  slot: string;
-}
-
 export interface IPostObject {
   [key: string]: IPost[];
 }

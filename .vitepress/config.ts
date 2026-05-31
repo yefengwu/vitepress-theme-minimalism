@@ -3,26 +3,11 @@ import { usePosts } from '../src/composables/usePosts';
 import { hashPassword } from '../src/utils/hashPassword';
 import type { ThemeConfig } from '../src/types';
 
-const slot = `
-<template #doc-after>
-  <AdItem :custom="ads" type="doc" />
-</template>
-`;
-
-const custom = `
-<script lang="ts" setup>
-import AdItem from '/src/components/AdItem.vue';
-import { ads } from '/.vitepress/theme/ads.ts';
-</script>
-`;
-
 const { posts, hiddenPosts, excludePosts, descriptionMap, rewrites } = await usePosts({
   pageSize: 6,
   homepage: false,
   srcDir: 'posts',
-  excerpt: 150,
-  slot,
-  custom
+  excerpt: 150
 });
 
 export default defineConfig<ThemeConfig>({
