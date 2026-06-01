@@ -1,0 +1,56 @@
+{
+	"siteCards": [
+		{
+			"name": "博客",
+			"link": "https://blog.example.com",
+			"icon": "fa7-solid:blog"
+		},
+		{
+			"name": "网盘",
+			"link": "https://pan.example.com",
+			"icon": "mdi-cloud"
+		},
+		{
+			"name": "音乐",
+			"link": "https://music.example.com",
+			"icon": "akar-icons:music"
+		},
+		{
+			"name": "起始页",
+			"link": "https://start.example.com",
+			"icon": "fa-solid:compass"
+		},
+		{
+			"name": "网址集",
+			"link": "https://sites.example.com",
+			"icon": "fa6-solid:book"
+		},
+		{
+			"name": "今日热榜",
+			"link": "https://hot.example.com",
+			"icon": "solar:fire-bold"
+		}
+	],
+	"linkCards": [
+		{
+			"link": "https://github.com/yefengwu",
+			"icon": "mdi:github"
+		},
+		{
+			"link": "https://space.bilibili.com/334697671",
+			"icon": "mingcute:bilibili-line"
+		},
+		{
+			"link": "https://res.abeim.cn/api/qq/?qq=2434784458",
+			"icon": "mingcute:qq-fill"
+		},
+		{
+			"link": "mailto:franklxw@outlook.com",
+			"icon": "mdi-email"
+		},
+		{
+			"link": "https://t.me/franklxw",
+			"icon": "ic:baseline-telegram"
+		}
+	]
+}

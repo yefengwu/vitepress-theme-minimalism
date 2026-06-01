@@ -69,8 +69,7 @@ export default defineConfig<ThemeConfig>({
     },
     socialLinks: [{ icon: 'github', link: 'https://github.com/izhichao/vitepress-theme-minimalism' }],
     footer: {
-      message: 'Theme by <a href="https://github.com/izhichao/vitepress-theme-minimalism" target="_blank">Minimalism</a>',
-      copyright: `Copyright © 2017-${new Date().getFullYear()} <a href="https://github.com/izhichao" target="_blank">只抄</a>`
+      copyright: 'Copyright © 2017-2025 <a href="https://github.com/izhichao" target="_blank">轶风</a> & 陇ICP备2021002156号-1'
     },
     search: { provider: 'local' }
   },

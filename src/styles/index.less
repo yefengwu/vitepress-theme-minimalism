@@ -51,6 +51,29 @@ svg {
   min-height: 100dvh !important;
 }
 
+// 首页布局：同步旧项目的位置，并控制在一屏内
+#VPContent.VPContent.is-home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin: auto;
+  width: 100%;
+}
+
+#VPContent.VPContent.is-home .VPHome {
+  margin: auto;
+  padding-bottom: 0;
+}
+
+#VPContent.VPContent.is-home .VPHome .container {
+  max-width: 1384px;
+}
+
+body:has(#VPContent.VPContent.is-home) {
+  overflow-y: hidden;
+}
+
 // 滚动条
 :root::-webkit-scrollbar,
 .VPSidebar::-webkit-scrollbar,
@@ -105,6 +128,27 @@ pre::-webkit-scrollbar {
         display: none;
       }
     }
+  }
+}
+
+@media (max-width: 768px) {
+  .VPFooter {
+    display: none;
+  }
+
+  #VPContent.VPContent.is-home {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-top: auto;
+    width: 100%;
+    overscroll-behavior: none;
+    overflow: hidden !important;
+  }
+
+  #VPContent.VPContent.is-home .VPHome {
+    margin-bottom: 4vh;
   }
 }
 
